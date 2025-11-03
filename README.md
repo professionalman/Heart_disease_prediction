@@ -11,15 +11,15 @@ A beautiful and intuitive **AI-Powered Medical Analysis System** for predicting 
 
 ### Main Interface
 
-![Application Interface](https://via.placeholder.com/800x500/e74c3c/ffffff?text=Heart+Disease+Prediction+App)
+![Application Interface](https://github.com/professionalman/Heart_disease_prediction/blob/main/screenshots/Picture1.png)
 
 ### Data Visualization
 
-![Data Visualization](https://via.placeholder.com/800x500/3498db/ffffff?text=Interactive+Visualizations)
+![Data Visualization](https://github.com/professionalman/Heart_disease_prediction/blob/main/screenshots/Picture2.png)
 
 ### Model Training
 
-![Model Training](https://via.placeholder.com/800x500/27ae60/ffffff?text=ML+Model+Evaluation)
+![Model Training](https://github.com/professionalman/Heart_disease_prediction/blob/main/screenshots/Picture5.png)
 
 ## ✨ Features
 
