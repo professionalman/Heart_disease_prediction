@@ -236,7 +236,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Your Name**
 
-- GitHub: [@yourusername](https://github.com/professionalman)
+- GitHub: [Kavya Arora](https://github.com/professionalman)
 - Email: 24mca20091@cuchd.in
 
 ## 🙏 Acknowledgments
