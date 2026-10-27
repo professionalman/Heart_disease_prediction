@@ -11,15 +11,15 @@ A beautiful and intuitive **AI-Powered Medical Analysis System** for predicting 
 
 ### Main Interface
 
-![Application Interface](https://github.com/professionalman/Heart_disease_prediction/blob/main/screenshots/Picture1.png)
+![Application Interface](screenshots/Picture1.png)
 
 ### Data Visualization
 
-![Data Visualization](https://github.com/professionalman/Heart_disease_prediction/blob/main/screenshots/Picture2.png)
+![Data Visualization](screenshots/Picture2.png)
 
 ### Model Training
 
-![Model Training](https://github.com/professionalman/Heart_disease_prediction/blob/main/screenshots/Picture5.png)
+![Model Training](screenshots/Picture5.png)
 
 ## ✨ Features
 
@@ -46,11 +46,11 @@ A beautiful and intuitive **AI-Powered Medical Analysis System** for predicting 
 
 ### 🎨 **Modern UI/UX**
 
-- 💎 Beautiful card-based design
-- 🌈 Professional color scheme
-- 📱 Responsive layout (1400x900)
-- ✨ Smooth animations and hover effects
-- 🎯 Intuitive navigation with tabbed interface
+- 💎 Card-based dashboard design with summary stat cards
+- 🧭 Sidebar navigation with a persistent "Load dataset" action
+- 📐 Resizable layout — charts reflow to fit the window
+- ✨ Hover effects and a live status bar
+- 🎨 Consistent chart styling (teal = no disease, rose = disease)
 
 ## 🚀 Getting Started
 
@@ -58,32 +58,40 @@ A beautiful and intuitive **AI-Powered Medical Analysis System** for predicting 
 
 - Python 3.8 or higher
 - pip package manager
+- Tkinter (bundled with Python on Windows and macOS; on Ubuntu/Debian install it with `sudo apt install python3-tk`)
 
 ### Installation
 
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/heart-disease-prediction.git
-   cd heart-disease-prediction
+   git clone https://github.com/professionalman/Heart_disease_prediction.git
+   cd Heart_disease_prediction
    ```
 
-2. **Install required packages**
+2. **(Optional) Create a virtual environment**
+
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate       # Windows
+   source venv/bin/activate     # macOS / Linux
+   ```
+
+3. **Install required packages**
 
    ```bash
    pip install -r requirements.txt
    ```
 
-   Or install manually:
+4. **Run the application**
 
-   ```bash
-   pip install numpy pandas matplotlib seaborn scikit-learn
-   ```
-
-3. **Run the application**
    ```bash
    python Heart_.py
    ```
+
+   On macOS / Linux use `python3` if `python` points to Python 2.
+
+5. **Load the sample data**: click **＋ Load dataset** and pick `heart.csv` from the project folder.
 
 ## 📋 Dataset Requirements
 
@@ -108,7 +116,7 @@ The application expects a CSV file with the following features:
 
 ### Sample Dataset
 
-A sample dataset (`heart_disease_data.csv`) with 303 patient records is included for testing purposes.
+A sample dataset (`heart.csv`) with 1,025 patient records is included in the project folder.
 
 ## 🛠️ Technologies Used
 
@@ -134,27 +142,26 @@ A sample dataset (`heart_disease_data.csv`) with 303 patient records is included
 ### 1️⃣ Load Dataset
 
 1. Open the application
-2. Navigate to the **📂 Data Explorer** tab
-3. Click **"📂 Load Dataset"**
-4. Select your CSV file
-5. View dataset statistics and information
+2. Click **"＋ Load dataset"** in the top-right corner (available on every page)
+3. Select your CSV file (e.g. `heart.csv`)
+4. The **Data Explorer** page shows summary cards, a data preview and a per-column summary
 
 ### 2️⃣ Visualize Data
 
-1. Go to the **📊 Data Visualizer** tab
-2. Choose from available visualizations:
+1. Open **Data Visualizer** from the sidebar
+2. Choose a chart from the switcher at the top:
    - **Correlation Heatmap** - See feature correlations
    - **Feature Distribution** - Analyze feature patterns
    - **Target Distribution** - Check class balance
 
 ### 3️⃣ Train Models
 
-1. Switch to the **🧠 Model Trainer** tab
-2. Click **"🔍 Evaluate KNN"** to test KNN classifier
+1. Open **Model Trainer** from the sidebar
+2. Click **"Run K-Nearest Neighbors"** to test the KNN classifier
    - Evaluates K values from 1 to 20
    - Displays performance graph
    - Shows optimal K value
-3. Click **"🌳 Evaluate Random Forest"** to test RF classifier
+3. Click **"Run Random Forest"** to test the RF classifier
    - Shows cross-validation score
    - Displays accuracy percentage
 
@@ -176,29 +183,29 @@ A sample dataset (`heart_disease_data.csv`) with 303 patient records is included
 ## 📁 Project Structure
 
 ```
-heart-disease-prediction/
+Heart_disease_prediction/
 │
 ├── Heart_.py                 # Main application file
 ├── README.md                 # Project documentation
 ├── requirements.txt          # Python dependencies
-├── heart_disease_data.csv    # Sample dataset (optional)
+├── heart.csv                 # Sample dataset (1,025 records)
+├── .gitignore
 │
 └── screenshots/              # Application screenshots
-    ├── main_interface.png
-    ├── visualization.png
-    └── model_training.png
+    └── Picture1.png … Picture7.png
 ```
 
 ## 🔧 Configuration
 
 The application uses these default settings:
 
-- **Window Size**: 1400x900 pixels
-- **Theme**: Modern flat design
-- **Colors**:
-  - Primary: `#3498db` (Blue)
-  - Success: `#27ae60` (Green)
-  - Danger: `#e74c3c` (Red)
+- **Window Size**: 1400x900 pixels (minimum 1100x720, resizable)
+- **Theme**: Modern flat design with a dark sidebar
+- **Colors** (defined in the `C` dictionary at the top of `Heart_.py`):
+  - Accent: `#E11D48` (Rose)
+  - Success: `#059669` (Green)
+  - Healthy class: `#14B8A6` (Teal)
+  - Sidebar: `#0F172A` (Slate)
 - **Font**: Segoe UI
 
 ## 🤝 Contributing
@@ -234,7 +241,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**Your Name**
+**Kavya Arora**
 
 - GitHub: [Kavya Arora](https://github.com/professionalman)
 - Email: 24mca20091@cuchd.in
@@ -258,4 +265,4 @@ For questions, suggestions, or issues, please open an issue on GitHub or contact
 
 <p align="center">
   <sub>Built as part of MCA SEM 3 Machine Learning Project</sub>
-</p>"
+</p>
